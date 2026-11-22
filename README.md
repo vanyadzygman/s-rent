@@ -1,34 +1,32 @@
-# 🛴 S-Rent: Scooter Rental 
+# S-Rent: Scooter Rental 
 
   **Course work in the discipline “Databases”**
 
-  ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
-  ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-  ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-  ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-  ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+## Опис
 
-## 📖 Опис
+S-Rent - backend-сервіс оренди електросамокатів. Користувачі орендують самокати на станціях, поїздки тарифікуються, а оплата фіксується в системі. Проєкт демонструє проєктування реляційної БД у 3НФ, складні SQL-запити, транзакційні сценарії створення, оновлення й видалення даних, а також тестування й контейнеризацію.
 
-## 👥 Члени команди
+## Члени команди
 
   <p align="left">
     <a href="https://t.me/vanyadzygman"><img src="https://img.shields.io/badge/Дзигман_І._О.-ІМ--51-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Дзигман І. О."/></a>
     <a href="https://t.me/saaayq"><img src="https://img.shields.io/badge/Юхимчук_К._С.-ІМ--51-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Юхимчук К. С."/></a>
   </p>
 
-## 🧰 Технологічний стек
+## Технологічний стек
 
-  | Компонент | Технологія | Версія |
+| Компонент | Технологія | Версія |
   |:---|:---|:---:|
-  | Мова | Python | [версія] |
-  | Фреймворк API | FastAPI + Uvicorn | [версія] |
-  | СУБД | PostgreSQL | [версія] |
-  | SQL-бібліотека | psycopg (чистий SQL, без ORM) | [версія] |
-  | Тестування | pytest | [версія] |
+  | Мова | Python | 3.14 |
+  | Фреймворк API | FastAPI | 0.165.0 |
+  | ASGI-сервер | Uvicorn | 0.54.0 |
+  | СУБД | PostgreSQL | 18.7 |
+  | SQL builder | SQLAlchemy (Core) | 2.0.58 |
+  | Драйвер БД | psycopg 3 | 3.3.9 |
+  | Тестування | pytest | 9.2.0 |
   | Інфраструктура | Docker, Docker Compose | - |
 
-## ⚙️ Налаштування
+## Налаштування
 
   **1. Клонуйте репозиторій**
   ```bash
@@ -40,13 +38,13 @@
   docker-compose up -d
   ```
 
-## 🚀 Запуск додатку
+## Запуск додатку
 
   ```bash
   [команда запуску]
   ```
 
-## 🧪 Запуск тестів
+## Запуск тестів
 
   **Усі тести**
   ```bash
@@ -61,13 +59,13 @@
   > [!WARNING]
   > Інтеграційні тести потребують запущеної БД (`docker-compose up -d`).
 
-## 🗂️ Структура проєкту
+## Структура проєкту
   ```
   s-rent/
   ├──
   ```
   
-## 📡 Приклади API
+## Приклади API
 
   <details>
   <summary><b>Приклад запиту й відповіді</b></summary>
